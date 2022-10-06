@@ -1,9 +1,20 @@
 import mongoose from 'mongoose'
+import * as dotenv from 'dotenv'
+dotenv.config()
 
-const db_User = 'ManuelCR'
-const db_Password = 'YomiYomi'
-const db_Name = 'kodemia'
-const db_Host = 'clustermanucr.vb0auoq.mongodb.net'
+// const db_User = 'ManuelCR'
+// const db_Password = 'YomiYomi'
+// const db_Name = 'kodemia'
+// const db_Host = 'clustermanucr.vb0auoq.mongodb.net'
+
+
+// const db_User = process.env.db_User
+// const db_Password = process.env.bd_Password
+// const db_Name = process.env.bd_Name
+// const db_Host = process.env.bd_Host
+
+const {db_User, db_Password,db_Name, db_Host} = process.env
+
 
 const URL = `mongodb+srv://${db_User}:${db_Password}@${db_Host}/${db_Name}?retryWrites=true&w=majority` // regresa una promesa
 
