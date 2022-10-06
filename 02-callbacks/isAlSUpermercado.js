@@ -118,7 +118,7 @@ interviewProess((error, mensaje, objeto) => {
     }
     console.log(mensaje);
 }
-
+)
 
 
 
@@ -138,6 +138,7 @@ interviewProess((error, mensaje, objeto) => {
 
 // Falsy
 
-const cadenaVacia = ''
-const cero = 0;
-const valrNull = null
+// const cadenaVacia = ''
+// const cero = 0;
+// const valrNull = null
+
