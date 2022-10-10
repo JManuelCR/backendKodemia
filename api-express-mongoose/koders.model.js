@@ -37,3 +37,5 @@
         default: false  //  tenga un valor por defecto
     }
  })
+
+ export {koderSchema}
